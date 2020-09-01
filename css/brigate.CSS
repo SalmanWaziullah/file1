@@ -1,0 +1,899 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;469;500;600;700&display=swap');
+
+*{margin:0;padding:0;}
+body{
+	font-family: 'Work Sans', sans-serif;
+	font-size:16px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Oswald', sans-serif;
+	
+}
+section {
+    padding: 70px 0px;
+}
+.topBar {
+    background: #efefef;
+	overflow:hidden;
+}
+.container {
+    overflow:hidden;
+    width: 1140px;
+    margin: auto;
+}
+
+.phone {
+    border-right: 1px solid #e2e2e2;
+	border-left: 1px solid #e2e2e2;
+    float: left;
+    width: 200px;
+    padding: 15px 5px;
+}
+
+.email {
+    float: left;
+    width: 720px;
+    padding: 15px 5px;
+}
+i.fas.fa-phone {
+    padding-right: 5px;
+    font-size: 15px;
+    color: #ff4523;
+}
+
+i.fas.fa-envelope {
+    padding-right: 5px;
+    font-size: 14px;
+    color: #ff4523;
+}
+#social a{
+    border-right: 1px solid #e2e2e2;
+    color: #2d2d2d;
+    display: block;
+    padding: 15px;
+    float: left;
+	transition:0.5s;
+}
+#social a:first-child {
+	border-left: 1px solid #e2e2e2;
+	padding: 15px 18px;
+}
+#social a:hover{
+	color:#ff4523;
+}
+.logo {
+    width: 640px;
+    float: left;
+    padding: 20px 0px;
+}
+.navBar {
+    width: 500px;
+    float: left;
+}
+
+.navBar ul {
+    list-style: none;
+}
+
+.navBar ul li {
+    float: left;
+    display: inline-block;
+    padding: 30px 11px;
+    font-weight: 500;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+	transition: 0.5s;
+}
+.navBar ul li a:hover{
+	color:tomato;
+}
+#homeMain{
+	padding:0;
+}
+.homeSlider {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(image/brigate.jpg);
+	background-size: cover;
+	
+}
+.SliderContent{
+	color:white;
+	width: 290px;
+}
+.SliderContent h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+
+.SliderContent p {
+    margin-bottom: 35px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+button.btn {
+    color: #1b1e23;
+    background: #ffffff;
+    border: none;
+    padding:  10px 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    border-radius: 3px;
+    cursor: pointer;
+	transition:0.5s;
+}
+button.btn:hover{
+	background:#e4c335;
+	color:white;
+	
+	
+}
+.sliderNav {
+    width: 50px;
+    margin: auto;
+}
+
+.sliderNav span {
+    width: 9px;
+    background: transparent;
+    border: 3px solid #fff;
+    display: block;
+    height: 9px;
+    border-radius: 10px;
+    float: left;
+    margin: 4px;
+	cursor: pointer;
+}
+.sliderNav span:last-child{
+	background:#ffffff;
+}
+.sboxIcon {
+    margin: auto;
+    text-align: center;
+}
+#services {
+    background: #ececec;
+}
+.serviceBoxWrapper{
+	overflow:hidden;
+	padding-left: 30px;
+}
+
+.BoxWrapper {
+    width: 250px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+}
+.singleBox {
+    background: white;
+    transition:0.5s;
+}
+.singleBox:hover {
+	background:#ff4523;
+	color:white;
+	cursor:pointer;
+	
+}
+
+.singleBox:hover a{
+	color:white;
+	text-decoration:underline;
+}
+
+.sboxIcon i {
+    font-size: 35px;
+    color: #ff4523;
+    padding: 20px;
+	transition:0.5s;
+}
+
+.sboxTitle {
+    text-align: center;
+}
+
+.sboxTitle h1 {
+    text-transform: uppercase;
+    line-height: 23px;
+    letter-spacing: -1px;
+    padding: 15px 0px;
+}
+
+.sboxDes {
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.sboxLink {
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 100px;
+}
+
+.sboxLink a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ff4523;
+	transition:0.5s;
+}
+.singleBox.active {
+    background: #ff4523;
+    color: white;
+}
+.singleBox.active i{
+	color:white;
+}
+.singleBox.active a{
+	color:white;
+}
+.teamContent{
+	overflow:hidden;
+}
+.image img {
+    max-width: 100%;
+}
+
+.image {
+    width: 550px;
+    float: left;
+}
+
+.teamDetails {
+    float: right;
+    width: 550px;
+}
+
+.teamDetails {
+    float: right;
+    width: 550px;
+}
+ol.leftOl {
+    list-style: none;
+    float: left;
+    line-height: 30px;
+    font-weight: 500;
+    padding-right: 30px;
+}
+ol.rightOl {
+    list-style: none;
+    float: left;
+    line-height: 30px;
+    font-weight: 500;
+}
+.titleDescription h2 {
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+
+.titleDescription p {
+    width: 330px;
+    padding: 20px 0px;
+    color: #292929;
+    letter-spacing: 0.5px;
+}
+
+.teamFacilities {
+    overflow: hidden;
+    margin-top: 15px;
+}
+.teamBtn {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.teamBtn a {
+    padding: 10px 15px;
+    background: #ff4523;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition:0.5s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.teamBtn a:hover {
+	background:black;
+}
+.teamFacilities ol li a {
+    text-decoration: none;
+    color: #4c4c4c;
+	transition:0.3s;
+}
+.teamFacilities ol li a:hover{
+	color:#ff4523;
+}
+#chooseUs {
+    background: linear-gradient(#0000006b,#00000059), url(image/choose.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.singleicon {
+    text-align: center;
+    color: white;
+    width: 220px;
+    float: left;
+    margin-right: 65px;
+    text-transform: uppercase;
+}
+
+.singleicon h2 {
+    font-size: 55px;
+    font-family: arial black;
+}
+
+.singleicon h4 {
+    font-size: 22px;
+}
+
+.sIcon i {
+    font-size: 35px;
+}
+section#moreFromUS {
+    background-color: #ececec;
+}
+
+.blogDes {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.blogDes h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.blogDes h2:after {
+    content: "";
+    position: absolute;
+    background: tomato;
+    height: 4px;
+    width: 55px;
+    bottom: 0;
+    border-radius: 3px;
+    left: 50%;
+    transform: translateX(-28px);
+}
+.blogDes p {
+    width: 580px;
+    margin: auto;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+.blogSingleimg {
+    width: 245px;
+    float: left;
+    margin: 0px 20px;
+}
+.blogimg    {
+	width: 242px;
+	height: 175px;
+	}
+
+.blogimg img {
+    width: 100%;
+    height: 100%;
+}
+.blogContent {
+    text-align: center;
+}
+.blogContent h2 {
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: -1px;
+    color: #424242;
+    padding: 9px 0px;
+}
+
+.blogContent p {
+    letter-spacing: -1px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #424242;
+}
+.blogWrapper {
+    overflow: hidden;
+}
+.priceSingleBox  ul li i {
+    color: #ec2805;
+    font-size: 13px;
+    line-height: 33px;
+}
+
+.priceSingleBox {
+    width: 264px;
+    float: left;
+    margin: 0px 28px;
+    padding: 10px 29px;
+    background: white;
+    box-shadow: -4px 4px 10px -10px;
+    border: 1px solid #ececec;
+}
+
+.priceBoxWrapper {
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.priceSingleBox h4 {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.priceSingleBox h1 {
+    font-size: 35px;
+    padding: 10px 0px;
+}
+
+.priceSingleBox span {
+    font-size: 21px;
+}
+
+.priceSingleBox ul li {
+    list-style: none;
+    letter-spacing: -1px;
+}
+.priceBtn a {
+    padding: 8px 24px;
+    text-decoration: none;
+    background: #ff4523;
+    font-family: oswald;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.priceBtn {
+    padding: 25px 0px;
+}
+
+.priceBtn a:hover {
+    background: black;
+}
+
+.priceSingleBox ul li i {
+    margin-right: 2px;
+    font-size: 15px;
+}
+.ideaImg {
+	background-image:url(image/idea.png);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	float:left;
+    width:50%;
+    position:absolute;
+    height:100%;
+}
+.rightContent {
+    width: 50%;
+    float: right;
+    background: #3e3e3e;
+    color: white;
+    padding: 72px 0px;
+    overflow: hidden;
+}
+
+section#ideas {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ideaImg {
+    
+}
+
+.contentTitle h2 {
+    text-transform: uppercase;
+    margin: 10px 0px;
+}
+
+.contentTitle {
+    width: 650px;
+    padding-left: 70px;
+}
+
+.ideaSingleBox {
+    width: 350px;
+    overflow: hidden;
+    margin: 22px 0px;
+    float: left;
+}
+
+.rContentIcon {
+    width: 55px;
+    overflow: hidden;
+    float: left;
+}
+
+.rContentIcon i {
+    font-size: 45px;
+    margin-top: 10px;
+    color: #ff4523;
+}
+
+.rIconTitle {width: 250px;
+	float:left;
+	padding-top:4px;
+}
+
+.rIconTitle h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.rIconTitle p {
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    margin-top: 5px;
+}
+.ideaSboxWrapper {
+    padding-left: 70px;
+    overflow: hidden;
+}
+section#meetWithUS {
+    background: #ececec;
+}
+
+.meetBlogSingleimg {
+    width: 245px;
+    float: left;
+    margin: 0px 20px;
+}
+
+.meetBlogimg {
+    width: 245px;
+    height: 250px;
+	position:relative;
+}
+
+.meetBlogimg img {
+    width: 100%;
+    height: 100%;
+	transition:.5s;
+}
+
+.meetBlogWrapper {
+    overflow: hidden;
+}
+
+.meetBlogDes  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.meetBlogDes p {
+    margin: 21px 0px;
+    padding: 0px 240px;
+}
+
+.meetBlogDes {
+    text-align: center;
+}
+.meetBlogDes h2:after {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    background: tomato;
+    height: 5px;
+    width: 55px;
+    border-radius: 4px;
+    left: 50%;
+    transform: translateX(-30px);
+}
+.meetBlogContent {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.socialIcons {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 42px;
+}
+
+.socialIcons a {
+    border-radius: 100%;
+    background: tomato;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: grid;
+    float: left;
+    text-decoration: none;
+    place-items:center;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    transition:.5s;
+	opacity:0;
+}
+.socialIcons a:hover {
+   background:white !important;
+   color:black;
+}
+
+.socialIcons a:first-child {
+    background: #3B5998;
+	transition:.40s;
+}
+.socialIcons a:nth-child(2) {
+    background: #00ACEE;
+	transition:.50s;
+}
+.socialIcons a:nth-child(3) {
+    background: #0E76A8;
+	transition:.700s;
+}
+.socialIcons a:last-child {
+    background: #DB4A39;
+    transition:.90s;
+}
+.meetBlogSingleimg:hover .socialIcons a:first-child {
+	 transform: translateY(25px);
+	 opacity:1;
+}
+.meetBlogSingleimg:hover .socialIcons a:nth-child(2) {
+	 transform: translateY(25px);
+	 opacity:1;
+}
+.meetBlogSingleimg:hover .socialIcons a:nth-child(3) {
+	 transform: translateY(25px);
+	 opacity:1;
+}
+.meetBlogSingleimg:hover .socialIcons a:last-child {
+	 transform: translateY(25px);
+	 opacity:1;
+}
+.meetBlogSingleimg:hover .meetBlogimg img{
+	transform:scale(1.05)
+}
+footer#footer {
+    background: #272525;
+    overflow: hidden;
+    padding-top: 140px;
+}
+
+.fBox {
+    overflow: hidden;
+    width: 260px;
+    float: left;
+    color: #999;
+}
+
+.copyright {
+    color: #999;
+}
+
+.copyR {
+    width: 550px;
+    float: left;
+    font-size: 13px;
+	padding:20px 0px;
+}
+
+.copyL {
+    width: 550px;
+    float: right;
+	padding:20px 0px;
+}
+.copyL ul {
+    margin-left: 160px;
+}
+
+.copyL ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.copyL ul li a {
+    text-decoration: none;
+    color: #999;
+}
+
+.copyL ul li a:hover {
+    color: #ff4523;
+}
+.copyRightContainer {
+    border-top: 1px solid #999;
+}
+.fBox h2 {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.fBox p {
+    width: 210px;
+    margin-bottom: 2;
+}
+
+.fSocialIcons a {
+    place-items: center;
+    background: #999;
+    border-radius: 3px;
+    text-decoration: none;
+    display: grid;
+    width: 23px;
+    float: left;
+    height: 20px;
+    margin: 0px 5px;
+    color: white;
+}
+
+.fSocialIcons i {
+}
+
+.fSocialIcons {
+    overflow: hidden;
+    margin-top: 25px;
+}
+.RpostRight h2 {
+    font-size: 12px;
+    font-weight: 500;
+    width: 130px;
+}
+
+.RpostRight i {
+    float: left;
+    margin-right: 4px;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.RpostRight {
+    overflow: hidden;
+    width: 200px;
+    display: inline-block;
+    float: right;
+}
+.Rpostleft span {
+    color: white;
+    font-size: 14px;
+}
+
+.Rpostleft {
+    width: 50px;
+    background: #999;
+    text-align: center;
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.Rpostleft h2 {
+    padding: 0px;
+}
+.Rpost {
+    width: 260px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.fBox ul li a {
+    text-decoration: none;
+    color: #999;
+}
+
+.fBox ul li {
+    list-style: none;
+    line-height: 38px;
+    border-bottom: 1px dotted #999;
+}
+
+.fBox ul {width: 191px;}
+
+.RpostRight p {
+    width: 68px;
+    float: left;
+    font-size: 14px;
+}
+.fContact i {
+    color: white !important;
+}
+.fBoxWrapper {
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.fContact {
+    margin-bottom: 7px;
+}
+section#subscribe {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: -125px;
+}
+
+.subscribeWrapper {
+    overflow: hidden;
+    background: #ff5131;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.subscribeSbox {
+    width: 353px;
+    float: left;
+}
+
+.subscribeSbox h2 {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.subscribeSbox input {
+    border: none;
+}
+.subscribeSocialIcons a {
+    text-decoration: none;
+    color: white;
+    display: grid;
+    float: left;
+    padding: 3px;
+    place-items: center;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    border: 2px solid;
+}
+
+.subscribeSocialIcons {
+    overflow: hidden;
+    margin-top: 18px;
+}
+
+.subscribeSbox p {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+input#email {
+    padding: 10px 15px;
+    font-family: emoji;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border: none;
+}
+
+input#button {
+    background: black;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 50px;
+    margin-left: -35px;
+    position: relative;
+    border: none;
+	cursor:pointer;
+}
+div#inputWrapper {
+    height: 35px;
+    overflow: hidden;
+}
